@@ -1,0 +1,107 @@
+
+:root{
+    --primary: #9C27B0;
+    --primary-dark: #89119D;
+    --secondary: #FFCE00;
+    --secondary-dark: rgb(233, 287, 2);
+    --white: #fff;
+    --black: #000;
+
+    --font-main: "Staatliches", sans-serif;
+    
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+/* Global styles */
+
+body{
+    background-color: var(--primary);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+h1, h2, h3{
+    text-align: center;
+    color: var(--white);
+    font-family: var(--font-main);
+}
+
+h1{ font-size: 4rem; }
+
+h2{ font-size: 3.2rem; }
+
+h3{ font-size: 2.4rem; }
+
+.header{
+    display:flex;
+    justify-content: center;
+}
+
+.header__logo{
+    margin: 3rem 0rem;
+}
+
+/* Navigation */
+
+.navigation{
+    background-color: var(--primary-dark);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navigation__link{
+    font-family: var(--font-main);
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.navigation__link:hover{
+    color: var(--secondary);
+}
+
+.navigation__link--active{
+    color: var(--secondary);
+}
+
+.footer{
+    background-color: var(--primary-dark);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer__text{
+    font-family: var(--font-main);
+    text-align: center;
+    color: var(--secondary);
+    font-size: 2.2rem;
+}
